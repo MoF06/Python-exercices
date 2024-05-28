@@ -1,0 +1,50 @@
+In the tutorial, you defined several variables to calculate the total number of seconds in a year.  Run the next code cell to do the calculation here.
+
+# Create variables
+num_years = 4
+days_per_year = 365 
+hours_per_day = 24
+mins_per_hour = 60
+secs_per_min = 60
+
+# Calculate number of seconds in four years
+total_secs = secs_per_min * mins_per_hour * hours_per_day * days_per_year * num_years
+print(total_secs)
+
+# TODO: Set the value of the births_per_min variable
+births_per_min = 250
+
+# TODO: Set the value of the births_per_day variable
+births_per_day = 250 * mins_per_hour * hours_per_day 
+
+# Number of total passengers
+total = len(titanic_data)
+print(total)
+
+# Number of passengers who survived
+survived = (titanic_data.Survived == 1).sum()
+print(survived)
+
+# Number of passengers under 18
+minors = (titanic_data.Age < 18).sum()
+print(minors)
+
+# TODO: Fill in the value of the survived_fraction variable
+survived_fraction = survived / total 
+
+# Print the value of the variable
+print(survived_fraction)
+
+# TODO: Fill in the value of the minors_fraction variable
+minors_fraction = minors / total 
+
+# Print the value of the variable
+print(minors_fraction)
+
+Table : 
+	PassengerId 	Survived 	Pclass 	Name 	Sex 	Age 	SibSp 	Parch 	Ticket 	Fare 	Cabin 	Embarked
+0 	1 	0 	3 	Braund, Mr. Owen Harris 	male 	22.0 	1 	0 	A/5 21171 	7.2500 	NaN 	S
+1 	2 	1 	1 	Cumings, Mrs. John Bradley (Florence Briggs Th... 	female 	38.0 	1 	0 	PC 17599 	71.2833 	C85 	C
+2 	3 	1 	3 	Heikkinen, Miss. Laina 	female 	26.0 	0 	0 	STON/O2. 3101282 	7.9250 	NaN 	S
+3 	4 	1 	1 	Futrelle, Mrs. Jacques Heath (Lily May Peel) 	female 	35.0 	1 	0 	113803 	53.1000 	C123 	S
+4 	5 	0 	3 	Allen, Mr. William Henry 	male 	35.0 	0 	0 	373450 	8.0500 	NaN 	S
